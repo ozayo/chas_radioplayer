@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sveriges Radio Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sveriges Radio Player</h1>
+      <p>Uppgift - chas_radioplayer</p>
+      <p>Created by Ozay Ozdemir <a href="#" target="_blank">Github repo</a></p>
+      <div class="radiolist">
+        <!-- Add a select box for filtering -->
+        <div class="filter">
+          <label for="channelFilter">Filter by Channel Type:</label>
+          <select id="channelFilter">
+            <option value="all">All Channels</option>
+            <option value="Rikskanal">Rikskanal</option>
+            <option value="Lokal kanal">Lokal kanal</option>
+            <option value="Minoritet och språk">Minoritet och språk</option>
+            <option value="Fler kanaler">Fler kanaler</option>
+            <option value="Extrakanaler">Extrakanaler</option>
+            <!-- Add other channel types as options here -->
+          </select>
+        </div>
+
+        <div id="channels"></div>
+      </div>
+    </div>
+
+    <script src="radioplayer.js"></script>
+  </body>
+</html>
